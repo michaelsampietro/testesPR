@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projeto Redação</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+  <style>
+
+    html {
+      
+      background-image: black url("tour-bg.png");
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+    }
+
+    /* BOTÃO DE SIMULAÇÃO, REMOVER QUANDO PASSAR PARA O SITE! */
+    .btn {
+      color: rgb(240,240,240);
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 5px;
+      background-color: #e53933;
+      border-radius: 0px;
+    }
+
+    h1 {
+      font-style: italic;
+      margin-bottom: 0;
+      color: white;
+    }
+
+    small {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .background-oficina-curso {
+      color: rgb(230,230,230);
+      font-size: 14px;
+      height: auto;
+      background-image: url("background.jpg");
+      box-shadow: inset 0 0 0 1000px rgba(6, 43, 54, 0.8);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* cor da progressa bar: 181, 204, 73*/
+
+    .progress {
+      background-color: rgb(214,214,214);
+      border-radius: 40px;
+      height: 30px;
+      padding: 0;
+    }
+
+    .progress-modulo {
+      background-color: rgb(214,214,214);
+      border-radius: 40px;
+      height: 20px;
+      margin-left: 10px;
+      padding: 0;
+    }
+
+    .progress-bar {
+      background-color: rgb(181, 204, 73);
+      font-size: 18px;
+      font-weight: 300;
+      border-radius: 40px;
+      line-height: 30px;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    .progress-bar-modulo {
+      background-color: rgb(181, 204, 73);
+      font-weight: 300;
+      border-radius: 40px;
+      line-height: 20px;
+      text-align: right;
+      padding-right: 10px;
+      color: rgb(250,250,250);
+    }
+
+    .padding {
+      padding-top: 30px;
+    }
+
+    .divider {
+      font-size: 32px;
+    }
+
+    .modulo p{
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    .modulo {
+      margin-left: 20px;
+    }
+
+
+    .azul {
+      color: rgb(6, 43, 54);
+    }
+
+    .vermelho {
+      color: rgb(228,57,58);
+      font-weight: 100;
+    }
+
+    .cinza {
+      color: rgb(165, 165, 165);
+    }
+
+    .thumbnail {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("background.jpg");
+      box-shadow: inset 0 0 0 1000px rgba(6, 43, 54, 0.8);
+      height: 168px;
+      width: 180px;
+      border-radius: 0px;
+    }
+
+    .texto-thumbnail {
+      position:absolute;
+      width:100%;
+      text-align:center;
+      line-height: 3em;
+      font-size: 72px;
+    }
+
+    .desativado {
+      box-shadow: inset 0 0 0 1000px rgba(165,165,165, 0.8);
+      color: rgba(165,165,165);
+    }
+
+    @media screen and (max-width: 1023px) {
+      .texto-modulo {
+        padding-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class='background-oficina-curso padding margin-bottom'>
+    <div class='container'>
+      <div class='row padding'>
+        <div class='col-xs-12 col-sm-8 col-sm-offset-2 text-center margin-bottom'>
+          <small>CURSO</small>
+          <h1>
+            Redação para o ENEM
+          </h1>
+          <small>86 VÍDEOS, 58 HORAS, POR QG DO ENEM</small>
+          <br><br>
+          <p>No Curso Redação para ENEM 2017 você encontra todos os recursos para gabaritar a Redação. Neste curso, o professor
+Raphael Torres dá aulas ao vivo quinzenais com uma abordagem prática e objetiva, que é completamente diferenciada.</p>
+          <br> <br>
+          <a href="#" class="btn btn-lg btn-submit">
+            Continuar de onde parou
+          </a> <br>
+          <small>DISSERTAÇÃO ARGUMENTATIVA: ESTRUTURA GERAL E PARÁGRAFO DE INTRODUÇÃO - MODELOS DE INTRODUÇÃO</small>
+          <br><br><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container padding col-xs-12 col-md-8 col-md-offset-2">
+    <p style="color: rgb(19,61,92);" class="text-center">PROGRESSO GERAL DO CURSO</p>
+
+    <!-- Barra de progresso  -->
+    <div class="row progress col-xs-offset-1 col-xs-10">
+      <div class="progress-bar" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width:16%">
+        16%
+      </div>
+    </div>
+    <div class="row col-xs-offset-1 col-xs-10 text-center">
+      <p style="color: rgb(6, 43, 54); margin-bottom: 50px;" class="text-center">5 aulas assistidas <br class="visible-xs">
+        <span class="divider hidden-xs"> | </span>
+        8 exercícios resolvidos<br class="visible-xs">
+        <span class="divider hidden-xs"> | </span>
+         2 redações corrigidas
+      </p>
+    </div>
+
+
+
+    <!-- MODULO 1 -->
+
+
+    <div class="row padding">
+      <!-- 180x168 -->
+      <div class="background-oficina-curso col-xs-12 visible-xs visible-sm" style = "height: 100px;">
+        <h1 style="line-height: 120px;">Módulo 1</h1>
+      </div>
+      
+      <div class="modulo padding">
+        <div class="col-md-3 thumbnail hidden-xs hidden-sm text-left">
+          <h1 class="texto-thumbnail">m1</h1>
+        </div>
+
+        <div class="col-md-8 col-xs-12 texto-modulo"> <!-- adicionar marign-top no xs -->
+          <p class="azul hidden-sm hidden-xs">Módulo 1</p>
+          <p class="vermelho">8 vídeoaulas / 12 exercícios </p>
+          <h3 style="margin: 0;">Gramática básica para redação</h3>
+          <p class="azul">Descrição do módulo e sua finalidade; lorem ipsum dot...</p>
+          <div class="progress-modulo">
+            <div class="progress-bar-modulo" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+              30%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FIM MODULO 1 -->
+    
+    <!-- MÓDULO 2 -->
+
+    <div class="row padding">
+      <!-- 180x168 -->
+      <div class="background-oficina-curso desativado col-xs-12 visible-xs visible-sm" style = "height: 100px;">
+        <h1 style="line-height: 120px;">Módulo 2</h1>
+      </div>
+      
+      <div class="modulo padding">
+        <div class="col-md-3 thumbnail desativado hidden-xs hidden-sm text-left">
+          <h1 class="texto-thumbnail">m2</h1>
+        </div>
+
+        <div class="col-md-8 col-xs-12 texto-modulo"> <!-- adicionar marign-top no xs -->
+          <p class="cinza hidden-sm hidden-xs">Módulo 2</p>
+          <p class="cinza">10 vídeoaulas / 8 exercícios </p>
+          <h3 class="cinza" style="margin: 0;">Gramática básica para redação</h3>
+          <p class="cinza">Descrição do módulo e sua finalidade; lorem ipsum dot...</p>
+          <div class="progress-modulo">
+            <div class="progress-bar-modulo" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+              <!-- 30% -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIM MODULO 2 -->
+
+    <!-- MODULO 3 -->
+
+    <div class="row padding">
+      <!-- 180x168 -->
+      <div class="background-oficina-curso desativado col-xs-12 visible-xs visible-sm" style = "height: 100px;">
+        <h1 style="line-height: 120px;">Módulo 3</h1>
+      </div>
+      
+      <div class="modulo padding">
+        <div class="col-md-3 thumbnail desativado hidden-xs hidden-sm text-left">
+          <h1 class="texto-thumbnail">m3</h1>
+        </div>
+
+        <div class="col-md-8 col-xs-12 texto-modulo"> <!-- adicionar marign-top no xs -->
+          <p class="cinza hidden-sm hidden-xs">Módulo 3</p>
+          <p class="cinza">13 vídeoaulas / 11 exercícios </p>
+          <h3 class="cinza" style="margin: 0;">Gramática básica para redação</h3>
+          <p class="cinza">Descrição do módulo e sua finalidade; lorem ipsum dot...</p>
+          <div class="progress-modulo">
+            <div class="progress-bar-modulo" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+              <!-- 30% -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIM MODULO 3 -->
+
+    <!-- MODULO 4 -->
+
+    <div class="row padding">
+      <!-- 180x168 -->
+      <div class="background-oficina-curso desativado col-xs-12 visible-xs visible-sm" style = "height: 100px;">
+        <h1 style="line-height: 120px;">Módulo 4</h1>
+      </div>
+      
+      <div class="modulo">
+        <div class="col-md-3 thumbnail desativado hidden-xs hidden-sm text-left">
+          <h1 class="texto-thumbnail">m4</h1>
+        </div>
+
+        <div class="col-md-8 col-xs-12 texto-modulo"> <!-- adicionar marign-top no xs -->
+          <p class="cinza hidden-sm hidden-xs">Módulo 4</p>
+          <p class="cinza">13 vídeoaulas / 11 exercícios </p>
+          <h3 class="cinza" style="margin: 0;">Gramática básica para redação</h3>
+          <p class="cinza">Descrição do módulo e sua finalidade; lorem ipsum dot...</p>
+          <div class="progress-modulo">
+            <div class="progress-bar-modulo" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+              <!-- 30% -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIM MODULO 4 -->
+
+
+    <a href="cadastro-oficina">Entrar na página cadastro-oficina (REMOVER NA VERSÃO FINAL)</a>
+
+
+
+</body>
+
+</html>

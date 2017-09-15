@@ -1,0 +1,5 @@
+.background-oficina-curso {
+  background-image: url("background.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(6,43,54,.7);
+  background-position: center;
+}
